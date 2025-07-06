@@ -70,7 +70,6 @@ import { useRouter } from 'next/navigation';
 const items = [
   { label: "Home", href: "/" },
   { label: "Jobs", href: "/job" },
-  { label: "Stats", href: "/stats" },
   { label: "prep", href: "/prep" },
 ];
 
