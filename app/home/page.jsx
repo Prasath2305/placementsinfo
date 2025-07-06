@@ -5,7 +5,7 @@ import Features from "../components/featuresection";
 
 export default function HomePage() {
     return (
-      <div>
+      <div className="bg-black">
     <Hero/>
     <Features/>
     </div>

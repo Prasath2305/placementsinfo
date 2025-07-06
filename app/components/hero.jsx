@@ -2,7 +2,7 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <div className="max-w-4xl mx-auto text-center p-8 my-8 mt-20">
+    <div className="max-w-4xl mx-auto text-center p-8 my-8 mt-0">
       <h1 className="text-2xl md:text-5xl font-bold text-yellow-400 mb-4">⚠️ Unofficial Disclaimer</h1>
       <p className="text-gray-300 mb-3 md:text-4xl text-2xl">
         This website is <strong className="text-white">completely unofficial</strong> and is created by students, for students.

@@ -1,28 +1,133 @@
-// navbar.jsx
-import GooeyNav from "../ui components/gooeynav";
+// "use client";
+
+// import { useState, useRef, useEffect } from 'react';
+
+// const items = [
+//   { label: "Home", href: "/" },
+//   { label: "Jobs", href: "/job" },
+//   { label: "Stats", href: "#" },
+//   { label: "prep", href: "#" },
+// ];
+
+// export default function Navbar() {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const [indicatorStyle, setIndicatorStyle] = useState({
+//     width: '0px',
+//     left: '0px',
+//   });
+//   const itemRefs = useRef([]);
+
+//   useEffect(() => {
+//     // Initialize the indicator position after the first render
+//     if (itemRefs.current[activeIndex]) {
+//       const element = itemRefs.current[activeIndex];
+//       setIndicatorStyle({
+//         width: `${element.offsetWidth}px`,
+//         left: `${element.offsetLeft}px`,
+//       });
+//     }
+//   }, [activeIndex]);
+
+//   return (
+//     <nav className="bg-black p-4 relative">
+//       <div className="container mx-auto flex justify-center">
+//         <div className="flex space-x-8 relative">
+//           {/* Moving indicator */}
+//           <div 
+//             className="absolute h-8 bg-white rounded-md transition-all duration-300 ease-in-out top-1/2 -translate-y-1/2"
+//             style={indicatorStyle}
+//           />
+          
+//           {items.map((item, index) => (
+//             <a
+//               key={item.label}
+//               href={item.href}
+//               ref={(el) => itemRefs.current[index] = el}
+//               className={`relative z-10 px-3 py-2 rounded-md font-medium transition-colors duration-300 ${
+//                 activeIndex === index ? 'text-black' : 'text-white hover:text-gray-300'
+//               }`}
+//               onClick={(e) => {
+//                 e.preventDefault();
+//                 setActiveIndex(index);
+//               }}
+//             >
+//               {item.label}
+//             </a>
+//           ))}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }
+
+
+
+"use client";
+
+import { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 const items = [
-  { label: "Home", href: "#" },
-  { label: "Jobs", href: "#" },
-  { label: "Stats", href: "#" },
-  { label: "prep", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Jobs", href: "/job" },
+  { label: "Stats", href: "/stats" },
+  { label: "prep", href: "/prep" },
 ];
 
-const Navbar = () => {
-  return (
-    <div style={{ height: '0px', position: 'relative'}} className="top-5 justify-items-center">
-      <GooeyNav
-        items={items}
-        particleCount={15}
-        particleDistances={[90, 10]}
-        particleR={100}
-        initialActiveIndex={0}
-        animationTime={600}
-        timeVariance={300}
-        colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-      />
-    </div>
-  );
-};
+export default function Navbar() {
+  const router = useRouter();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [indicatorStyle, setIndicatorStyle] = useState({
+    width: '0px',
+    left: '0px',
+  });
+  const itemRefs = useRef([]);
 
-export default Navbar;
+  useEffect(() => {
+    if (itemRefs.current[activeIndex]) {
+      const element = itemRefs.current[activeIndex];
+      setIndicatorStyle({
+        width: `${element.offsetWidth + 24}px`, // Increased width
+        left: `${element.offsetLeft - 12}px`, // Centered position
+      });
+    }
+  }, [activeIndex]);
+
+  const handleClick = (index, href) => {
+    setActiveIndex(index);
+    if (href !== '#') {
+      router.push(href);
+    }
+  };
+
+  return (
+    <nav className="bg-black p-4 relative">
+      <div className="container mx-auto flex justify-center">
+        <div className="flex space-x-8 relative">
+          {/* Larger moving indicator */}
+          <div 
+            className="absolute h-10 bg-white rounded-lg transition-all duration-300 ease-in-out top-1/2 -translate-y-1/2"
+            style={indicatorStyle}
+          />
+          
+          {items.map((item, index) => (
+            <a
+              key={item.label}
+              href={item.href}
+              ref={(el) => itemRefs.current[index] = el}
+              className={`relative z-10 px-4 py-2 rounded-lg font-medium transition-colors duration-300 ${
+                activeIndex === index ? 'text-black' : 'text-white hover:text-gray-300'
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleClick(index, item.href);
+              }}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
+}
