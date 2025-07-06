@@ -24,8 +24,8 @@ const Features = () => {
         maxWidth: '1400px'
       }}>
         {/* Card 1 - Job Details */}
-        <GlareHover
-          glareColor="#ffffff"
+        <GlareHover href="/job"
+          glareColor="#4ade80"
           glareOpacity={0.3}
           glareAngle={-30}
           glareSize={300}
@@ -46,7 +46,7 @@ const Features = () => {
 
         {/* Card 2 - Application Tracker */}
         <GlareHover
-          glareColor="#ffffff"
+          glareColor="#67e8f9"
           glareOpacity={0.3}
           glareAngle={-30}
           glareSize={300}
@@ -57,10 +57,10 @@ const Features = () => {
         >
           <div style={{ padding: '20px', textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 1.8rem)', fontWeight: '900', color: '#333', margin: 0 }}>
-              Job Statistics
+              Dedicated Materials 
             </h2>
             <p style={{ marginTop: '15px', color: '#666', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
-              Track the salary package of the companies
+              Find the Company specific Materials for Preparation
             </p>
           </div>
         </GlareHover>
@@ -87,8 +87,8 @@ const Features = () => {
         </GlareHover> */}
 
         {/* Card 4 - Interview Prep */}
-        <GlareHover
-          glareColor="#ffffff"
+        <GlareHover href="/prep"
+          glareColor="#a78bfa"
           glareOpacity={0.3}
           glareAngle={-30}
           glareSize={300}
