@@ -1,3 +1,992 @@
+// // app/job/data/companiesData.js
+// export const companiesData = [
+//   {
+//     id: 1,
+//     company: "LTI MINDTREE",
+//     title: "Graduate Engineer Trainee",
+//     type: "Full time",
+//     ctc: "4.05 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "https://www.ltimindtree.com",
+//     process: ""
+//   },
+//   {
+//     id: 2,
+//     company: "Infosys",
+//     title: "Specialist Programmer",
+//     type: "Full time",
+//     ctc: "9.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "https://www.infosys.com/",
+//     process: ""
+//   },
+//   {
+//     id: 3,
+//     company: "Societe Generate",
+//     title: "Software/System Engineer",
+//     type: "Full time",
+//     ctc: "5.44 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 4,
+//     company: "TATA Consultancy Services",
+//     title: "NQT",
+//     type: "Full time",
+//     ctc: "3.60 - 7.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 5,
+//     company: "Checkpoint",
+//     title: "Software Engineer - ICP",
+//     type: "Intern + Full time",
+//     ctc: "7.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 6,
+//     company: "TEXAS INSTRUMENT",
+//     title: "INTERN",
+//     type: "Intern",
+//     ctc: "0.25 LPM",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 7,
+//     company: "City Union Bank",
+//     title: "Relationship Manager",
+//     type: "Full time",
+//     ctc: "4.32 - 5.02 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 8,
+//     company: "Suntec",
+//     title: "Intern",
+//     type: "Intern leads to Full time",
+//     ctc: "Not Specified",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 9,
+//     company: "IBM",
+//     title: "Software Engineer",
+//     type: "Full time",
+//     ctc: "11.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 10,
+//     company: "Xogene",
+//     title: "Jr. Front End and Jr. Backend Dev",
+//     type: "Intern + Full time",
+//     ctc: "4.00 - 6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 11,
+//     company: "Bounteous x Accolite",
+//     title: "Software Engineer",
+//     type: "Full time",
+//     ctc: "8.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 12,
+//     company: "Philips",
+//     title: "Intern",
+//     type: "Full time",
+//     ctc: "6.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 13,
+//     company: "PWC",
+//     title: "IT Intern",
+//     type: "Full time",
+//     ctc: "Not specified",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 14,
+//     company: "NETAPP",
+//     title: "Internship - IT Intern",
+//     type: "Full time",
+//     ctc: "7.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 15,
+//     company: "75way Technologies Pvt. LTD",
+//     title: "Software development executive",
+//     type: "Intern leads to Full time",
+//     ctc: "5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 16,
+//     company: "Bank of America",
+//     title: "Development,Testing,Cyber,Infra Operations",
+//     type: "Full time",
+//     ctc: "6.45 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 17,
+//     company: "ZopSmart",
+//     title: "Software Developer Engineer",
+//     type: "Intern + Full time",
+//     ctc: "10.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 18,
+//     company: "Kalvium career education Pvt. LTD",
+//     title: "Program Architect",
+//     type: "Intern + Full time",
+//     ctc: "7.70 - 10.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 19,
+//     company: "Protechsoft",
+//     title: "Intern",
+//     type: "Intern + Full time",
+//     ctc: "Unpaid/max 50000 per month",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 20,
+//     company: "Bank of america",
+//     title: "Team member",
+//     type: "Full time",
+//     ctc: "3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 21,
+//     company: "HPE",
+//     title: "Intern + Grad",
+//     type: "Intern leads to Full time",
+//     ctc: "8.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 22,
+//     company: "KMK consulting",
+//     title: "KMK consulting",
+//     type: "Full time",
+//     ctc: "5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 23,
+//     company: "Accenture",
+//     title: "Associate Software Engineer",
+//     type: "Full time",
+//     ctc: "4.50 - 5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 24,
+//     company: "Capgemini",
+//     title: "Analyst",
+//     type: "Full time",
+//     ctc: "4.25 - 5.75 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 25,
+//     company: "Kritter",
+//     title: "Intern",
+//     type: "Intern",
+//     ctc: "Not specified",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 26,
+//     company: "Dayananda Sagar University",
+//     title: "Associate Professor",
+//     type: "Full time",
+//     ctc: "10.00 - 12.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 27,
+//     company: "Deloitte",
+//     title: "Not specified",
+//     type: "Full time",
+//     ctc: "7.60 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 28,
+//     company: "Micron",
+//     title: "Not specified",
+//     type: "Full time",
+//     ctc: "14.92 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 29,
+//     company: "Mastech infotrellus olympia",
+//     title: "Trainee",
+//     type: "Full time",
+//     ctc: "4.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 30,
+//     company: "SOTI",
+//     title: "Technical Support Trainee",
+//     type: "Intern leads to Full time",
+//     ctc: "6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 31,
+//     company: "Arvind fashions",
+//     title: "Fashion Consultant",
+//     type: "Full time",
+//     ctc: "3.50 - 3.80 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 32,
+//     company: "echoVME Digital",
+//     title: "Social media and digital marketing",
+//     type: "Full time",
+//     ctc: "3.00 - 3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 33,
+//     company: "Peninsular research operations",
+//     title: "Junior Software Developer",
+//     type: "Full time",
+//     ctc: "5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 34,
+//     company: "Workcohol solutions Private limited",
+//     title: "AI Engineer/AI dev",
+//     type: "Full time",
+//     ctc: "5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 35,
+//     company: "Intellect Design Arena Ltd",
+//     title: "Associate Consultant (Java FSD)",
+//     type: "Intern leads to Full time",
+//     ctc: "4.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 36,
+//     company: "Federal Bank",
+//     title: "Sales and client acquistion",
+//     type: "Full time",
+//     ctc: "12.32 - 16.42 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 37,
+//     company: "Codeyoung",
+//     title: "Inside sales",
+//     type: "Full time",
+//     ctc: "4.36 - 7.36 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 38,
+//     company: "Moder Solution india Pvt. Ltd",
+//     title: "Analyst",
+//     type: "Full time",
+//     ctc: "4.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 39,
+//     company: "Bluestone jewellery and lifestyle ltd",
+//     title: "Sales/Senior sales executive",
+//     type: "Full time",
+//     ctc: "3.00 - 4.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 40,
+//     company: "AAJ Enterprises",
+//     title: "Admin executive",
+//     type: "Intern + Full time",
+//     ctc: "4.00 - 5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 41,
+//     company: "Turing",
+//     title: "Business Analyst",
+//     type: "Full time",
+//     ctc: "3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 42,
+//     company: "Brand 4 brands",
+//     title: "Data analyst/Digital marketing",
+//     type: "Full time",
+//     ctc: "2.50 - 3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 43,
+//     company: "Test job",
+//     title: "TEST",
+//     type: "Intern leads to Full time",
+//     ctc: "3.00 - 8.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 44,
+//     company: "Mindgate",
+//     title: "Trainee Dev",
+//     type: "Full time",
+//     ctc: "5.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 45,
+//     company: "Atidan Technologies",
+//     title: "Software Trainee",
+//     type: "Full time",
+//     ctc: "4.00 - 6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 46,
+//     company: "Bahwan cybertek",
+//     title: "Software Intern",
+//     type: "Intern leads to Full time",
+//     ctc: "3.50 - 4.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 47,
+//     company: "Celebal Technologies",
+//     title: "Trainee - Jr. AI/ML Engineer",
+//     type: "Intern + Full time",
+//     ctc: "12.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 48,
+//     company: "Veeva systems",
+//     title: "Associate Migration Consultant",
+//     type: "Full time",
+//     ctc: "9.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 49,
+//     company: "Grazitti Interactive",
+//     title: "Software dev",
+//     type: "Intern + Full time",
+//     ctc: "3.01 - 3.13 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 50,
+//     company: "Swiggy",
+//     title: "Business analyst and support analyst",
+//     type: "Full time",
+//     ctc: "6.00 - 12.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 51,
+//     company: "Meesho",
+//     title: "Software Development Engineer Trainee",
+//     type: "Intern + Full time",
+//     ctc: "20.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 52,
+//     company: "FACE Prep",
+//     title: "Associate Trainer & Technical mentor",
+//     type: "Full time",
+//     ctc: "3.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 53,
+//     company: "Kyndryl",
+//     title: "Trainee",
+//     type: "Full time",
+//     ctc: "4.50 - 5.20 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 54,
+//     company: "Fushion practices",
+//     title: "Oracle cloud technical",
+//     type: "Full time",
+//     ctc: "5.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 55,
+//     company: "Tiger analytics",
+//     title: "Intern to associate",
+//     type: "Intern leads to Full time",
+//     ctc: "6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 56,
+//     company: "Oracle financial software servisces Ltd",
+//     title: "Associate consultant",
+//     type: "Full time",
+//     ctc: "9.35 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 57,
+//     company: "Engati",
+//     title: "Customer support - Intern",
+//     type: "Intern leads to Full time",
+//     ctc: "4.50 - 6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 58,
+//     company: "SCAD world school",
+//     title: "Teacher",
+//     type: "Full time",
+//     ctc: "2.16 - 5.40 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 59,
+//     company: "Prochant India Pvt ltd",
+//     title: "Voice process",
+//     type: "Full time",
+//     ctc: "2.45 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 60,
+//     company: "IBM",
+//     title: "Consulting - CIC",
+//     type: "Full time",
+//     ctc: "4.75 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 61,
+//     company: "TATA AIG",
+//     title: "Slaes",
+//     type: "Full time",
+//     ctc: "4.50 - 12.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 62,
+//     company: "RINEX TECHNOLOGIES PRIVATE LIMITED",
+//     title: "Inside sales stratergist",
+//     type: "Full time",
+//     ctc: "4.00 - 10.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 63,
+//     company: "Amdocs",
+//     title: "Trainee",
+//     type: "Full time",
+//     ctc: "6.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 64,
+//     company: "HiyaMee Pvt Ltd",
+//     title: "Associate Recruiter",
+//     type: "Full time",
+//     ctc: "3.54 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 65,
+//     company: "Josh Technology group",
+//     title: "Associate software developer",
+//     type: "Intern + Full time",
+//     ctc: "8.35 - 10.62 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 66,
+//     company: "DHL Logistics Pvt. Ltd",
+//     title: "Trainee",
+//     type: "Intern leads to Full time",
+//     ctc: "4.36 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 67,
+//     company: "Bajaj Allianz Life Insurance Co Ltd",
+//     title: "Relationship manager",
+//     type: "Full time",
+//     ctc: "2.60 - 3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 68,
+//     company: "Droidal Pvt Ltd",
+//     title: "AI Engineer",
+//     type: "Intern leads to Full time",
+//     ctc: "3.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 69,
+//     company: "Skill intern Pvt Ltd",
+//     title: "Business Development Associate ",
+//     type: "Intern leads to Full time",
+//     ctc: "4.20 - 5.20 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 70,
+//     company: "IdeaRx",
+//     title: "AI Developer",
+//     type: "Full time",
+//     ctc: "2.00 - 3.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 71,
+//     company: "Pursuit Future",
+//     title: "Business Development Associate",
+//     type: "Intern leads to Full time",
+//     ctc: "4.00 - 6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 72,
+//     company: "LaunchEd Global",
+//     title: "Business Development Executive",
+//     type: "Intern + Full time",
+//     ctc: "5.00 - 7.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 73,
+//     company: "Financial software & Systems",
+//     title: "Developer - Intern",
+//     type: "Intern",
+//     ctc: "Unpaid",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 74,
+//     company: "[24]7.ai",
+//     title: "Voice - Customer Care Executive Officer",
+//     type: "Full time",
+//     ctc: "2.40 - 3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 75,
+//     company: "Silverskills pvt ltd",
+//     title: "Cyber security",
+//     type: "Full time",
+//     ctc: "4.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 76,
+//     company: "Linz Technologies",
+//     title: "Business development executive",
+//     type: "Full time",
+//     ctc: "3.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 77,
+//     company: "India shelter Finance Corporation Ltd",
+//     title: "Insternship",
+//     type: "Intern",
+//     ctc: "max 25000/month",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 78,
+//     company: "Radware",
+//     title: "Cyber Security and Technology",
+//     type: "Intern leads to Full time",
+//     ctc: "6.00 - 7.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 79,
+//     company: "TO THE NEW",
+//     title: "Quality Engineering",
+//     type: "Intern leads to Full time",
+//     ctc: "4.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 80,
+//     company: "MoveInSync",
+//     title: "Produt specialist Intern",
+//     type: "Intern leads to Full time",
+//     ctc: "3.60 - 8.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 81,
+//     company: "Bosswallah Technologies Private Ltd",
+//     title: "Bosswallah Ambassador",
+//     type: "Full time",
+//     ctc: "3.00 - 4.80 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 82,
+//     company: "Omega Healthcare",
+//     title: "Trainee/Process (Executive/Associate) AR",
+//     type: "Full time",
+//     ctc: "2.76 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 83,
+//     company: "Bajaj Allianz Life Insurance Co Ltd",
+//     title: "Sales - ST",
+//     type: "Full time",
+//     ctc: "2.60 - 3.25 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 84,
+//     company: "EXA AG",
+//     title: "Engineers",
+//     type: "Full time",
+//     ctc: "8.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 85,
+//     company: "Intrainz Innovation Pvt Limited",
+//     title: "Business Development Associate",
+//     type: "Intern leads to Full time",
+//     ctc: "4.00 - 6.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 86,
+//     company: "Kotak Life Insurance",
+//     title: "Development Manager - sales",
+//     type: "Full time",
+//     ctc: "3.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 87,
+//     company: "CompIndia",
+//     title: "Machine Learning Engieer",
+//     type: "Full time",
+//     ctc: "3.00 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 88,
+//     company: "Infosys",
+//     title: "Specialist Programmer/Digital Specialist Engineer",
+//     type: "Full time",
+//     ctc: "6.25 - 9.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   },
+//   {
+//     id: 89,
+//     company: "Tata Electronics Private Limited",
+//     title: "Analytics",
+//     type: "Intern leads to Full time",
+//     ctc: "3.50 - 4.50 LPA",
+//     details: "",
+//     eligibility: "",
+//     website: "",
+//     process: ""
+//   }
+// ];
+
+
+
+
+
+
+
 // app/job/data/companiesData.js
 export const companiesData = [
   {
@@ -8,7 +997,7 @@ export const companiesData = [
     ctc: "4.05 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.ltimindtree.com",
     process: ""
   },
   {
@@ -19,7 +1008,7 @@ export const companiesData = [
     ctc: "9.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.infosys.com/",
     process: ""
   },
   {
@@ -30,7 +1019,7 @@ export const companiesData = [
     ctc: "5.44 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://careers.societegenerale.com",
     process: ""
   },
   {
@@ -41,7 +1030,7 @@ export const companiesData = [
     ctc: "3.60 - 7.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.tcs.com",
     process: ""
   },
   {
@@ -52,7 +1041,7 @@ export const companiesData = [
     ctc: "7.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.checkpoint.com",
     process: ""
   },
   {
@@ -63,7 +1052,7 @@ export const companiesData = [
     ctc: "0.25 LPM",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.ti.com",
     process: ""
   },
   {
@@ -74,7 +1063,7 @@ export const companiesData = [
     ctc: "4.32 - 5.02 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.cityunionbank.com",
     process: ""
   },
   {
@@ -85,7 +1074,7 @@ export const companiesData = [
     ctc: "Not Specified",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.suntecgroup.com",
     process: ""
   },
   {
@@ -96,7 +1085,7 @@ export const companiesData = [
     ctc: "11.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.ibm.com",
     process: ""
   },
   {
@@ -107,7 +1096,7 @@ export const companiesData = [
     ctc: "4.00 - 6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.xogene.com",
     process: ""
   },
   {
@@ -118,7 +1107,7 @@ export const companiesData = [
     ctc: "8.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bounteous.com",
     process: ""
   },
   {
@@ -129,7 +1118,7 @@ export const companiesData = [
     ctc: "6.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.philips.com",
     process: ""
   },
   {
@@ -140,7 +1129,7 @@ export const companiesData = [
     ctc: "Not specified",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.pwc.com",
     process: ""
   },
   {
@@ -151,7 +1140,7 @@ export const companiesData = [
     ctc: "7.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.netapp.com",
     process: ""
   },
   {
@@ -162,7 +1151,7 @@ export const companiesData = [
     ctc: "5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.75way.com",
     process: ""
   },
   {
@@ -173,7 +1162,7 @@ export const companiesData = [
     ctc: "6.45 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bankofamerica.com",
     process: ""
   },
   {
@@ -184,7 +1173,7 @@ export const companiesData = [
     ctc: "10.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.zopsmart.com",
     process: ""
   },
   {
@@ -195,7 +1184,7 @@ export const companiesData = [
     ctc: "7.70 - 10.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.kalvium.com",
     process: ""
   },
   {
@@ -206,7 +1195,7 @@ export const companiesData = [
     ctc: "Unpaid/max 50000 per month",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.protechsoft.com",
     process: ""
   },
   {
@@ -217,7 +1206,7 @@ export const companiesData = [
     ctc: "3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bankofamerica.com",
     process: ""
   },
   {
@@ -228,7 +1217,7 @@ export const companiesData = [
     ctc: "8.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.hpe.com",
     process: ""
   },
   {
@@ -239,7 +1228,7 @@ export const companiesData = [
     ctc: "5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.kmkconsulting.com",
     process: ""
   },
   {
@@ -250,7 +1239,7 @@ export const companiesData = [
     ctc: "4.50 - 5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.accenture.com",
     process: ""
   },
   {
@@ -261,7 +1250,7 @@ export const companiesData = [
     ctc: "4.25 - 5.75 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.capgemini.com",
     process: ""
   },
   {
@@ -272,7 +1261,7 @@ export const companiesData = [
     ctc: "Not specified",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.kritter.in",
     process: ""
   },
   {
@@ -283,7 +1272,7 @@ export const companiesData = [
     ctc: "10.00 - 12.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.dsu.edu.in",
     process: ""
   },
   {
@@ -294,7 +1283,7 @@ export const companiesData = [
     ctc: "7.60 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www2.deloitte.com",
     process: ""
   },
   {
@@ -305,7 +1294,7 @@ export const companiesData = [
     ctc: "14.92 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.micron.com",
     process: ""
   },
   {
@@ -316,7 +1305,7 @@ export const companiesData = [
     ctc: "4.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.mastechdigital.com",
     process: ""
   },
   {
@@ -327,7 +1316,7 @@ export const companiesData = [
     ctc: "6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.soti.net",
     process: ""
   },
   {
@@ -338,7 +1327,7 @@ export const companiesData = [
     ctc: "3.50 - 3.80 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.arvindfashions.com",
     process: ""
   },
   {
@@ -349,7 +1338,7 @@ export const companiesData = [
     ctc: "3.00 - 3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.echovme.in",
     process: ""
   },
   {
@@ -360,7 +1349,7 @@ export const companiesData = [
     ctc: "5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.peninsularindia.com",
     process: ""
   },
   {
@@ -371,7 +1360,7 @@ export const companiesData = [
     ctc: "5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.workcohol.com",
     process: ""
   },
   {
@@ -382,7 +1371,7 @@ export const companiesData = [
     ctc: "4.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.intellectdesign.com",
     process: ""
   },
   {
@@ -393,7 +1382,7 @@ export const companiesData = [
     ctc: "12.32 - 16.42 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.federalbank.co.in",
     process: ""
   },
   {
@@ -404,7 +1393,7 @@ export const companiesData = [
     ctc: "4.36 - 7.36 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.codeyoung.com",
     process: ""
   },
   {
@@ -415,7 +1404,7 @@ export const companiesData = [
     ctc: "4.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.modersolutions.com",
     process: ""
   },
   {
@@ -426,7 +1415,7 @@ export const companiesData = [
     ctc: "3.00 - 4.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bluestone.com",
     process: ""
   },
   {
@@ -437,7 +1426,7 @@ export const companiesData = [
     ctc: "4.00 - 5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.aajenterprises.com",
     process: ""
   },
   {
@@ -448,7 +1437,7 @@ export const companiesData = [
     ctc: "3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.turing.com",
     process: ""
   },
   {
@@ -459,7 +1448,7 @@ export const companiesData = [
     ctc: "2.50 - 3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.brand4brands.com",
     process: ""
   },
   {
@@ -481,7 +1470,7 @@ export const companiesData = [
     ctc: "5.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.mindgatesolutions.com",
     process: ""
   },
   {
@@ -492,7 +1481,7 @@ export const companiesData = [
     ctc: "4.00 - 6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.atidan.com",
     process: ""
   },
   {
@@ -503,7 +1492,7 @@ export const companiesData = [
     ctc: "3.50 - 4.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bahwancybertek.com",
     process: ""
   },
   {
@@ -514,7 +1503,7 @@ export const companiesData = [
     ctc: "12.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.celebaltech.com",
     process: ""
   },
   {
@@ -525,7 +1514,7 @@ export const companiesData = [
     ctc: "9.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.veeva.com",
     process: ""
   },
   {
@@ -536,7 +1525,7 @@ export const companiesData = [
     ctc: "3.01 - 3.13 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.grazitti.com",
     process: ""
   },
   {
@@ -547,7 +1536,7 @@ export const companiesData = [
     ctc: "6.00 - 12.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.swiggy.com",
     process: ""
   },
   {
@@ -558,7 +1547,7 @@ export const companiesData = [
     ctc: "20.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.meesho.com",
     process: ""
   },
   {
@@ -569,7 +1558,7 @@ export const companiesData = [
     ctc: "3.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.faceprep.in",
     process: ""
   },
   {
@@ -580,7 +1569,7 @@ export const companiesData = [
     ctc: "4.50 - 5.20 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.kyndryl.com",
     process: ""
   },
   {
@@ -591,7 +1580,7 @@ export const companiesData = [
     ctc: "5.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.fusionpractices.com",
     process: ""
   },
   {
@@ -602,7 +1591,7 @@ export const companiesData = [
     ctc: "6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.tigeranalytics.com",
     process: ""
   },
   {
@@ -613,7 +1602,7 @@ export const companiesData = [
     ctc: "9.35 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.oracle.com",
     process: ""
   },
   {
@@ -624,7 +1613,7 @@ export const companiesData = [
     ctc: "4.50 - 6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.engati.com",
     process: ""
   },
   {
@@ -635,7 +1624,7 @@ export const companiesData = [
     ctc: "2.16 - 5.40 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.scadcollege.edu",
     process: ""
   },
   {
@@ -646,7 +1635,7 @@ export const companiesData = [
     ctc: "2.45 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.prochant.com",
     process: ""
   },
   {
@@ -657,7 +1646,7 @@ export const companiesData = [
     ctc: "4.75 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.ibm.com",
     process: ""
   },
   {
@@ -668,7 +1657,7 @@ export const companiesData = [
     ctc: "4.50 - 12.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.tataaig.com",
     process: ""
   },
   {
@@ -679,7 +1668,7 @@ export const companiesData = [
     ctc: "4.00 - 10.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.rinex.ai",
     process: ""
   },
   {
@@ -690,7 +1679,7 @@ export const companiesData = [
     ctc: "6.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.amdocs.com",
     process: ""
   },
   {
@@ -701,7 +1690,7 @@ export const companiesData = [
     ctc: "3.54 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.hiyamee.com",
     process: ""
   },
   {
@@ -712,7 +1701,7 @@ export const companiesData = [
     ctc: "8.35 - 10.62 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.joshtechnologygroup.com",
     process: ""
   },
   {
@@ -723,7 +1712,7 @@ export const companiesData = [
     ctc: "4.36 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.dhl.com",
     process: ""
   },
   {
@@ -734,7 +1723,7 @@ export const companiesData = [
     ctc: "2.60 - 3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bajajallianzlife.com",
     process: ""
   },
   {
@@ -745,7 +1734,7 @@ export const companiesData = [
     ctc: "3.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.droidal.com",
     process: ""
   },
   {
@@ -756,7 +1745,7 @@ export const companiesData = [
     ctc: "4.20 - 5.20 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.skillintern.com",
     process: ""
   },
   {
@@ -767,7 +1756,7 @@ export const companiesData = [
     ctc: "2.00 - 3.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.idearx.io",
     process: ""
   },
   {
@@ -778,7 +1767,7 @@ export const companiesData = [
     ctc: "4.00 - 6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.pursuitfuture.com",
     process: ""
   },
   {
@@ -789,7 +1778,7 @@ export const companiesData = [
     ctc: "5.00 - 7.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.launchedglobal.com",
     process: ""
   },
   {
@@ -800,7 +1789,7 @@ export const companiesData = [
     ctc: "Unpaid",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.fss.co.in",
     process: ""
   },
   {
@@ -811,7 +1800,7 @@ export const companiesData = [
     ctc: "2.40 - 3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.247.ai",
     process: ""
   },
   {
@@ -822,7 +1811,7 @@ export const companiesData = [
     ctc: "4.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.silverskills.in",
     process: ""
   },
   {
@@ -833,7 +1822,7 @@ export const companiesData = [
     ctc: "3.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.linz.in",
     process: ""
   },
   {
@@ -844,7 +1833,7 @@ export const companiesData = [
     ctc: "max 25000/month",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.indiashelter.in",
     process: ""
   },
   {
@@ -855,7 +1844,7 @@ export const companiesData = [
     ctc: "6.00 - 7.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.radware.com",
     process: ""
   },
   {
@@ -866,7 +1855,7 @@ export const companiesData = [
     ctc: "4.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.tothenew.com",
     process: ""
   },
   {
@@ -877,7 +1866,7 @@ export const companiesData = [
     ctc: "3.60 - 8.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.moveinsync.com",
     process: ""
   },
   {
@@ -888,7 +1877,7 @@ export const companiesData = [
     ctc: "3.00 - 4.80 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bosswallah.com",
     process: ""
   },
   {
@@ -899,7 +1888,7 @@ export const companiesData = [
     ctc: "2.76 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.omegahealthcare.com",
     process: ""
   },
   {
@@ -910,7 +1899,7 @@ export const companiesData = [
     ctc: "2.60 - 3.25 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.bajajallianzlife.com",
     process: ""
   },
   {
@@ -921,7 +1910,7 @@ export const companiesData = [
     ctc: "8.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.exa-ag.com",
     process: ""
   },
   {
@@ -932,7 +1921,7 @@ export const companiesData = [
     ctc: "4.00 - 6.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.intrainz.com",
     process: ""
   },
   {
@@ -943,7 +1932,7 @@ export const companiesData = [
     ctc: "3.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.kotaklife.com",
     process: ""
   },
   {
@@ -954,7 +1943,7 @@ export const companiesData = [
     ctc: "3.00 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.compindia.com",
     process: ""
   },
   {
@@ -965,7 +1954,7 @@ export const companiesData = [
     ctc: "6.25 - 9.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.infosys.com",
     process: ""
   },
   {
@@ -976,7 +1965,7 @@ export const companiesData = [
     ctc: "3.50 - 4.50 LPA",
     details: "",
     eligibility: "",
-    website: "",
+    website: "https://www.tataelectronics.com",
     process: ""
   }
 ];
