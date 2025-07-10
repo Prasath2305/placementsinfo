@@ -581,7 +581,7 @@ const JobPage = () => {
                       href={selectedCompany.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm sm:text-base hover:text-blue-400 hover:underline"
+                      className="text-sm sm:text-base text-blue-400 underline"
                     >
                       {selectedCompany.website}
                     </a>
