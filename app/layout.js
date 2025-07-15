@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Placements Info - MCA",
+  title: "Placements Info",
   description: "Unofficial Placement Info Website",
 };
 
