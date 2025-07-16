@@ -10,4 +10,15 @@ export const companiesData = [
     website: "",
     process: ""
   },
+  {
+    id: 2,
+    company: "",
+    title: "",
+    type: "",
+    ctc: "",
+    details: "",
+    eligibility: "",
+    website: "",
+    process: ""
+  },
 ]
