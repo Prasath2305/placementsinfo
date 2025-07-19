@@ -118,7 +118,7 @@ const mca = () => {
               </div>
             </div>
 
-            <div className="relative w-full sm:w-48" ref={dropdownRef}>
+            <div className="relative w-full sm:w-60" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className={`w-full flex justify-between items-center bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 ${
